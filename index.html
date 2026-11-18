@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的论坛</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>我的论坛</h1>
+  </header>
+
+  <main>
+    <!-- 发帖表单 -->
+    <section class="post-form">
+      <h2>发新帖</h2>
+      <input id="post-title" type="text" placeholder="帖子标题" maxlength="50">
+      <textarea id="post-content" placeholder="帖子内容" rows="3" maxlength="500"></textarea>
+      <button id="submit-post">发布</button>
+      <p id="form-msg"></p>
+    </section>
+
+    <!-- 帖子列表 -->
+    <section class="post-list">
+      <h2>帖子列表</h2>
+      <div id="posts"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
